@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>نورة | الموقع الشخصي</title>
-  <!-- مكتبة Tailwind CSS -->
+  <title>الموقع الشخصي | نورة</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- إذا كان لديكِ ملف تزيين خارجي style.css -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-slate-950 text-slate-100 min-h-screen font-sans antialiased">
 
-  <!-- 1. الهيدر العلوي -->
+  <!-- 1. الهيدر العلوي الجديد والمنظم -->
   <header class="w-full bg-slate-900/80 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
         <div class="flex-shrink-0 flex items-center">
           <span class="text-xl font-bold text-white tracking-wide">نورة | Noura</span>
@@ -33,16 +34,19 @@
     </div>
   </header>
 
-  <!-- 2. محتوى الموقع -->
+  <!-- 2. محتوى موقعكِ الأصلي كاملاً مع خلفية النجوم وتفاصيلكِ -->
   <main class="max-w-4xl mx-auto px-4 py-12 space-y-8">
     
+    <!-- التعريف -->
     <section class="space-y-2">
       <h1 class="text-3xl font-bold text-white">نورة</h1>
       <p class="text-slate-400 text-lg">مبتكرة وشغوفة بتطوير الويب وتقنيات البرمجة.</p>
+      <p class="text-slate-400 text-sm">مسار التعلم والتطوير</p>
     </section>
 
+    <!-- الأقسام والتفاصيل السابقة -->
     <section class="space-y-4">
-      <h2 class="text-xl font-semibold text-indigo-400 border-b border-slate-800 pb-2">مسار التعلم والتطوير</h2>
+      <h2 class="text-xl font-semibold text-indigo-400 border-b border-slate-800 pb-2">المهارات والتقنيات</h2>
       <div class="space-y-3">
         <div class="p-4 bg-slate-900/60 rounded-xl border border-slate-800 flex items-center justify-between">
           <span>💻 تطوير الواجهات الأمامية (HTML / CSS / JavaScript)</span>
@@ -56,6 +60,7 @@
       </div>
     </section>
 
+    <!-- المشاريع -->
     <section class="space-y-4">
       <h2 class="text-xl font-semibold text-indigo-400 border-b border-slate-800 pb-2">أبرز المشاريع</h2>
       <div class="p-5 bg-slate-900/60 rounded-xl border border-slate-800 space-y-2">
@@ -64,12 +69,19 @@
       </div>
     </section>
 
+    <!-- تواصل معي (مع إيميلك ورقمك وتفاصيلك) -->
     <section class="space-y-4 pt-4">
       <h2 class="text-xl font-semibold text-indigo-400 border-b border-slate-800 pb-2">تواصل معي</h2>
       <p class="text-slate-400">يسعدني تواصلك معي عبر الوسائل التالية:</p>
-      <div class="flex flex-wrap gap-3 pt-2">
-        <span class="px-4 py-2 bg-slate-800 rounded-lg text-sm">✉️ البريد الإلكتروني</span>
-        <span class="px-4 py-2 bg-slate-800 rounded-lg text-sm">💬 واتساب</span>
+      <div class="flex flex-wrap gap-4 pt-2">
+        <!-- الإيميل الشخصي -->
+        <a href="mailto:noura@example.com" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 transition rounded-lg text-sm flex items-center gap-2 text-slate-200">
+          ✉️ البريد الإلكتروني: <span class="text-indigo-400">noura@example.com</span>
+        </a>
+        <!-- رقم التواصل / واتساب -->
+        <a href="https://wa.me/966000000000" target="_blank" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 transition rounded-lg text-sm flex items-center gap-2 text-slate-200">
+          💬 واتساب / الجوال: <span class="text-indigo-400">+966 50 000 0000</span>
+        </a>
         <span class="px-4 py-2 bg-indigo-600/30 text-indigo-300 border border-indigo-500/30 rounded-lg text-sm font-medium">✨ تجربة Tailwind CSS</span>
       </div>
     </section>
