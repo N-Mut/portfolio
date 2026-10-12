@@ -1,44 +1,30 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الموقع الشخصي | نورة</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <!-- نبذة شخصية -->
-        <h1>نورة</h1>
-        <p class="subtitle">مبتكرة وشغوفة بتطوير الويب وتقنيات البرمجة.</p>
+<!-- الهيدر العلوي المتناسق مع النمط الداكن -->
+<header class="w-full bg-slate-900/80 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      
+      <!-- اسمكِ أو شعاركِ -->
+      <div class="flex-shrink-0 flex items-center">
+        <span class="text-xl font-bold text-white tracking-wide">نورة | Noura</span>
+      </div>
 
-        <!-- مسار التعلم والتطوير -->
-        <h2>مسار التعلم والتطوير</h2>
-        <ul>
-            <li>💻 تطوير الواجهات الأمامية (HTML / CSS / JavaScript)</li>
-            <li>⚙️ البرمجة الخلفية باستخدام Laravel</li>
-            <li>🤖 أساسيات وتقنيات الذكاء الاصطناعي</li>
-        </ul>
+      <!-- روابط القائمة للشاشات الكبيرة -->
+      <nav class="hidden md:flex space-x-8 space-x-reverse">
+        <a href="#" class="text-slate-300 hover:text-indigo-400 font-medium transition-colors">الرئيسية</a>
+        <a href="#" class="text-slate-300 hover:text-indigo-400 font-medium transition-colors">مسار التعلم</a>
+        <a href="#" class="text-slate-300 hover:text-indigo-400 font-medium transition-colors">المشاريع</a>
+        <a href="#" class="text-slate-300 hover:text-indigo-400 font-medium transition-colors">تواصل معي</a>
+      </nav>
 
-        <!-- قسم المشاريع -->
-        <h2>أبرز المشاريع</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>🌐 الموقع الشخصي (Personal Portfolio)</h3>
-                <p>موقع ويب عصري بالنمط الداكن مبني باستعمال HTML5 و CSS3 بتصميم إنسيابي وتفاعلي.</p>
-            </div>
-        </div>
+      <!-- زر القائمة الجانبية (☰) للجوال -->
+      <div class="flex md:hidden items-center">
+        <button id="menu-btn" class="text-slate-300 hover:text-white focus:outline-none p-2">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
 
-        <!-- قسم التواصل -->
-        <h2>تواصل معي</h2>
-        <div class="contact-container">
-            <p>يسعدني تواصلكِ معي عبر البريد أو من خلال المنصات التالية:</p>
-            <div class="social-links">
-                <a href="mailto:example@email.com" class="social-btn">📧 البريد الإلكتروني</a>
-                <a href="https://linkedin.com" target="_blank" class="social-btn">💼 LinkedIn</a>
-                <a href="https://github.com" target="_blank" class="social-btn">🐙 GitHub</a>
-            </div>
-        </div>
     </div>
-</body>
-</html>
+  </div>
+</header>
