@@ -6,21 +6,24 @@
   <title>الموقع الشخصي | نورة</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
-  <!-- الهيدر العلوي -->
+</head> <!-- تم إغلاق الhead هنا بشكل صحيح -->
+
+<body class="bg-slate-950 text-white m-0 p-0">
+
+  <!-- الهيدر العلوي - وضعه هنا يجعله يمتد من الحافة للحافة بكل احترافية -->
   <header class="w-full bg-slate-900/85 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50">
-    <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
+    <div class="w-full px-5 py-3 flex items-center justify-between">
       
-      <!-- أيقونة القائمة (الخطوط الثلاثة) في الطرف -->
+      <!-- أيقونة القائمة (الخطوط الثلاثة) في أقصى الطرف -->
       <div class="flex items-center">
-        <button id="menu-btn" class="text-slate-300 hover:text-white p-2 focus:outline-none cursor-pointer">
+        <button id="menu-btn" class="text-slate-300 hover:text-white p-1 focus:outline-none cursor-pointer">
           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
         </button>
       </div>
 
-     
-      <!-- زر النمط الليلي والنهاري في الطرف الآخر -->
+      <!-- زر النمط الليلي والنهاري في أقصى الطرف الآخر -->
       <div class="flex items-center">
         <button id="theme-toggle" class="text-slate-200 hover:text-indigo-400 text-xl cursor-pointer p-1" title="تغيير النمط">
           ☽
@@ -30,14 +33,16 @@
     </div>
 
     <!-- قائمة الجوال المنسدلة -->
-    <div id="mobile-menu" class="hidden bg-slate-900 border-b border-slate-800 px-4 pt-2 pb-4 space-y-2 text-right">
+    <div id="mobile-menu" class="hidden bg-slate-900 border-b border-slate-800 px-5 pt-2 pb-4 space-y-2 text-right">
       <a href="#home" class="mobile-link block text-slate-300 hover:text-indigo-400 py-2 font-medium">الرئيسية</a>
       <a href="#learning" class="mobile-link block text-slate-300 hover:text-indigo-400 py-2 font-medium">مسار التعلم</a>
       <a href="#projects" class="mobile-link block text-slate-300 hover:text-indigo-400 py-2 font-medium">المشاريع</a>
       <a href="#contact" class="mobile-link block text-slate-300 hover:text-indigo-400 py-2 font-medium">تواصل معي</a>
       <a href="certificates.html" class="mobile-link block text-slate-300 hover:text-indigo-400 py-2 font-medium">مكتبة دوراتي</a>
     </div>
- </header>
+  </header>
+
+
 
   <!-- محتوى الموقع الأساسي -->
     <main id="home" class="max-w-4xl mx-auto px-4 py-8 space-y-12">
